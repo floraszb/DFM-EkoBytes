@@ -1,0 +1,141 @@
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Poszt</title>
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="contact-info">
+
+        <nav class="navbar">
+            <h1>
+                <img src="img/ekobytes2.png" alt="Site Logo" width="50" height="50" class="logo">
+            </h1>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html" class="nav-link">Főoldal</a></li>
+                <li class="nav-item"><a href="kampany.html" class="nav-link">Kampányunk</a></li>
+                <li class="nav-item"><a href="rolunk.html" class="nav-link">Rólunk</a></li>
+                <li class="nav-item"><a href="hirek.html" class="nav-link">Hírek</a></li>
+                <li class="nav-item ctn"><a href="elerhetoseg.html" class="nav-link">Elérhetőség</a></li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="" width="40" height="40" class="menu-btn">
+        </nav>
+
+        <div class="blur-overlay"></div>
+
+        <header class="blogpost">
+                <h1>Az adatközpontok</h1>
+                <div class="line"></div>
+          </header>
+          
+          <div class="container-blog">
+            <div class="main-post">
+              <h1>TUDOD HOVA KERÜL MINDEN ADATOD?</h1>
+            <p>Az adatközpontok nem látszanak, de a Földünk érzi a súlyukat.</p>
+            <p>A digitális világ látszólag súlytalan. Egy videó, egy mém, egy chatüzenet, pár kattintás, és máris a világ másik felén landol. De az igazság az, hogy minden egyes adatmozgás mögött hatalmas energiafelhasználás áll. És ez az energia, fájdalmasan gyakran, a bolygónk rovására megy.</p>
+            <h3>Mi az az adatközpont?</h3>
+            <p>Az adatközpont olyan, mint az internet szíve. Itt tárolják a fotóidat, az üzeneteidet, a videókat, a TikTokokat, a Google-kereséseket, mindent. Ezek a központok non-stop működnek, és folyamatosan hűteni kell őket, különben túlmelegednek.</p>
+            <p>Tudtad? Egyetlen nagy adatközpont évi több gigawattórányi áramot használ el, ez egy kisebb város energiafogyasztásával ér fel.</p>
+            <h3>Láthatatlan, de terheli a bolygót</h3>
+            <p>Az adatközpontok nagy része még mindig fosszilis energiával működik, és rengeteg vizet használnak a hűtéshez. Ráadásul a számuk rohamosan nő, a mesterséges intelligencia, a streaming, az online játékok és a social media térhódításával.</p>
+            <p>Becslések szerint 2030-ra a globális energiafogyasztás 8%-át az adatközpontok tehetik ki. Ez nem kis szám.</p>
+            <h3>Mit jelent ez ránk nézve?</h3>
+            <p>Az, hogy minden egyes story, poszt vagy like nemcsak digitális lábnyomot, hanem ökológiai lábnyomot is hagy.</p>
+            <p>Az, hogy a „felhő” valójában nagyon is földhöz kötött, és füstöl, ha nem figyelünk oda.</p>
+            <h3>Hogyan lehet ezt zöldebben csinálni?</h3>
+            <p>Válassz olyan platformokat, amelyek megújuló energiát használnak (pl. Ecosia, Google, részben).</p>
+            <p>Töröld a felesleges adatokat: régi e-mailek, duplikált képek, nem használt fájlok, mind helyet foglalnak.</p>
+            <p>Gondold át: minden megosztás számít. A digitális világ nem ingyen van, az árat a bolygó fizeti.</p>
+            <p>írta: Almási Zsolt</p>
+            <p>Források:</p>
+            <p>International Energy Agency (IEA), Data Centres and Data Transmission Networks (2023)
+            https://www.iea.org/reports/data-centres-and-data-transmission-networks</p>
+            <p>Nature, How to stop data centres from gobbling up the world’s electricity (2018)
+            https://www.nature.com/articles/d41586-018-06610-y</p>
+            <p>The Verge, Microsoft’s water use is skyrocketing as it bets on generative AI (2023)
+            https://www.theverge.com/2023/8/30/23851608/microsoft-water-use-increase-ai</p>
+            <p>Greenpeace, Clicking Clean Report (2020)
+            https://www.greenpeace.org/usa/reports/click-clean-2020</p>
+            <p>Google Sustainability: https://sustainability.google</p>
+            <p>Ecosia’s sustainability practices: https://ecosia.co/info</p>
+
+            </div>
+          
+            <aside class="sidebar">
+              <h2>Egyéb Bejegyéseink</h2>
+          
+              <a href="valtozas.html" class="sidebar-post">
+                <img src="./img/overconsumption.jpg" alt="Post 1">
+                <div class="sidebar-post-title">Javítás/Gyártás</div>
+              </a>
+          
+              <a href="ujulas.html" class="sidebar-post">
+                <img src="./img/chip.jpg" alt="Post 2">
+                <div class="sidebar-post-title">Energiaforrások változása</div>
+              </a>
+          
+              <a href="bejegyzes4.html" class="sidebar-post">
+                <img src="./img/techchanges.jpg" alt="Post 3">
+                <div class="sidebar-post-title">Visszajelzések</div>
+              </a>
+            </aside>
+          </div>
+
+        <section class="footer">
+            <p>Város 1234 Város-Kerület, Város,1234 5678 | Telefon: +36 01 234 5678 | Email: ekobytes@gmail.com</p>
+            <p>Copyright © 2025 EkoBytes</p>
+        </section>
+
+        <script>
+            const links = document.querySelectorAll('.nav-link');
+            const currentPage = window.location.pathname.split("/").pop();
+        
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        </script>
+        
+        <script>
+            const toggleButtons = document.querySelectorAll('.toggle-btn');
+            const panels = document.querySelectorAll('.toggle-panel');
+          
+            toggleButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-panel');
+                const panelToShow = document.getElementById(targetId);
+          
+                panels.forEach(panel => {
+                  if (panel !== panelToShow) {
+                    panel.classList.remove('active');
+                  }
+                });
+          
+                panelToShow.classList.toggle('active');
+              });
+            });
+          </script>
+        
+          <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const blurOverlay = document.querySelector('.blur-overlay');
+        
+        menuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          blurOverlay.classList.toggle('active');
+        });
+          </script>
+        
+          <script>
+            blurOverlay.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          blurOverlay.classList.remove('active');
+        });
+          </script>
+
+    </body>
+</html>

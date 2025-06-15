@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Rólunk</title>
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="contact-info">
+
+        <nav class="navbar">
+            <h1>
+                <img src="img/ekobytes2.png" alt="Site Logo" width="50" height="50" class="logo">
+            </h1>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html" class="nav-link">Főoldal</a></li>
+                <li class="nav-item"><a href="kampany.html" class="nav-link">Kampányunk</a></li>
+                <li class="nav-item"><a href="rolunk.html" class="nav-link">Rólunk</a></li>
+                <li class="nav-item"><a href="hirek.html" class="nav-link">Hírek</a></li>
+                <li class="nav-item ctn"><a href="elerhetoseg.html" class="nav-link">Elérhetőség</a></li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="" width="40" height="40" class="menu-btn">
+        </nav>
+
+        <div class="blur-overlay"></div>
+
+        <header class="blogpost">
+                <h1>EkoBytes</h1>
+                <div class="line"></div>
+          </header>
+          
+          <div class="container-blog">
+            <div class="main-post">
+              <h1>RÓLUNK</h1>
+              <div class="line"></div>
+              <h3>Kik vagyunk mi, és miért fontos, amit csinálunk?</h3>
+              <p>Mi vagyunk azok, akik a képernyő mögé néznek, és nemcsak az üzeneteket látják, hanem az energiafogyasztást is. Egyetemista csapatként a digitális fenntarthatóság elkötelezett hívei vagyunk, és hiszünk abban, hogy a jövő nem csak a technológiáról, hanem annak felelős használatáról is szól.</p>
+              <p>A kampányunk célja, hogy világosan, érthetően és szórakoztatóan mutassa meg, milyen rejtett környezeti költségekkel jár mindennapi digitális életünk. Azt szeretnénk, ha többé senki nem gondolná azt, hogy „az online világ zöld”.</p>
+              <h3>Miért csináljuk?</h3>
+              <p>Mert minden egyes e-mail, stream vagy keresés energiafogyasztással jár, és ez az energia gyakran fosszilis tüzelőanyagokból származik. Tudtad, hogy egyetlen film streamelése akár több gramm CO₂-t bocsáthat ki? Vagy hogy egy mesterséges intelligencia betanítása annyi energiát használ, mint egy háztartás évekre előre?
+                Ez az, amit kevesen tudnak, és amit mi meg akarunk változtatni.</p>
+              <h3>Hogyan csináljuk?</h3>
+              <p>TikTokon keresztül, kreatív és figyelemfelkeltő videókkal, amelyek egyszerre informatívak és szórakoztatóak. Olyan témákat dolgozunk fel, mint:</p>
+              <p>Az adatközpontok rejtett energiaigénye,</p>
+              <p>Az e-hulladék növekvő problémája és a javítási jog,</p>
+              <p>A mesterséges intelligencia energiafogyasztása,</p>
+              <p>És persze a digitális karbonlábnyom, amiről még mindig kevesen beszélnek.</p>
+              <h3>Kiknek szól?</h3>
+              <p>Neked. Nekünk. Mindenkinek, aki ma már digitálisan él, dolgozik, tanul vagy szórakozik. A célunk nem az, hogy bűntudatot keltsünk, hanem hogy felnyissuk a szemeket, és inspiráljunk a változásra.</p>
+              <h3>Mit szeretnénk elérni?</h3>
+              <p>Azt, hogy te is lásd: a digitális világ jövője attól függ, hogyan használjuk ma. Hiszünk abban, hogy az információ hatalom, és ha ezt a hatalmat jól használjuk, közösen formálhatunk egy fenntarthatóbb, zöldebb digitális jövőt.</p>
+              <p>Csatlakozz hozzánk a közösségi oldalaikon, és fedezd fel a digitális világ valódi árát, szórakoztatóan, érthetően, és egy jobb világ reményében.</p>
+              <p>írta: Szabó Flóra</p>
+            </div>
+          
+            <aside class="sidebar">
+              <h2>Egyéb bejegyzéseink</h2>
+          
+              <a href="bejegyzes3.html" class="sidebar-post">
+                <img src="./img/datacenterproblem.jpg" alt="Post 1">
+                <div class="sidebar-post-title">Adatközpontok</div>
+              </a>
+          
+              <a href="valtozas.html" class="sidebar-post">
+                <img src="./img/overconsumption.jpg" alt="Post 2">
+                <div class="sidebar-post-title">Javítás/Gyártás</div>
+              </a>
+          
+              <a href="ujulas.html" class="sidebar-post">
+                <img src="img/chip.jpg" alt="Post 3">
+                <div class="sidebar-post-title">Energiaforrások változása</div>
+              </a>
+            </aside>
+          </div>
+
+        <section class="footer">
+            <p>Város 1234 Város-Kerület, Város,1234 5678 | Telefon: +36 01 234 5678 | Email: ekobytes@gmail.com</p>
+            <p>Copyright © 2025 EkoBytes</p>
+        </section>
+
+        <script>
+            const links = document.querySelectorAll('.nav-link');
+            const currentPage = window.location.pathname.split("/").pop();
+        
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        </script>
+        
+        <script>
+            const toggleButtons = document.querySelectorAll('.toggle-btn');
+            const panels = document.querySelectorAll('.toggle-panel');
+          
+            toggleButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-panel');
+                const panelToShow = document.getElementById(targetId);
+          
+                panels.forEach(panel => {
+                  if (panel !== panelToShow) {
+                    panel.classList.remove('active');
+                  }
+                });
+          
+                panelToShow.classList.toggle('active');
+              });
+            });
+          </script>
+        
+          <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const blurOverlay = document.querySelector('.blur-overlay');
+        
+        menuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          blurOverlay.classList.toggle('active');
+        });
+          </script>
+        
+          <script>
+            blurOverlay.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          blurOverlay.classList.remove('active');
+        });
+          </script>
+
+    </body>
+</html>
