@@ -749,6 +749,16 @@ header.blogpost {
     min-width: 300px;
   }
 
+  .textbox {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 200px;
+  color: rgb(142, 161, 110);
+}
+
   .main-post h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -757,7 +767,7 @@ header.blogpost {
   .main-post p {
     line-height: 1.6;
     margin-bottom: 1rem;
-    color: whitesmoke;
+    color: rgb(142, 161, 110);
   }
 
   .sidebar {
